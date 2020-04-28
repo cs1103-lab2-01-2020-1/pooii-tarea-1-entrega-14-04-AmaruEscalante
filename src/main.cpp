@@ -1,25 +1,11 @@
 //
 // Created by amaru on 4/27/20.
 //
-#include <iostream>
 
-class Integer {
-    int value;
-public:
-    Integer();
-
-    Integer(int value);
-    Integer(const Integer& other);
-    Integer operator=(const Integer& other);
-    Integer operator+(int value);
-
-    operator int();
-    friend std::ostream& operator << (std::ostream& os, )
-
-};
-
+#include "ejercicios.h"
 
 int main(){
     std::cout << "Hello" << std::endl;
+    ejercicio5a();
     return 0;
 }

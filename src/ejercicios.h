@@ -5,10 +5,10 @@
 #ifndef TAREA1_EJERCICIOS_H
 #define TAREA1_EJERCICIOS_H
 
-#include "funciones.h"
+#include "tipos.h"
 
 void ejercicio5a();
-void ejercicio5b();
-void ejercicio6();
+//void ejercicio5b();
+//void ejercicio6();
 
 #endif //TAREA1_EJERCICIOS_H

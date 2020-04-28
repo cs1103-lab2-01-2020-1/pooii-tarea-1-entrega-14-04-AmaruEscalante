@@ -7,5 +7,9 @@
 
 #include <iostream>
 #include <algorithm>
+#include <cmath>
+
+using namespace std;
+
 
 #endif //TAREA1_TIPOS_H
