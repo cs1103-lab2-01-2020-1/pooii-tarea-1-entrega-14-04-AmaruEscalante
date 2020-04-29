@@ -21,78 +21,83 @@ Integer::operator int() {
     return this->value;
 }
 
-Integer Integer::operator+(const Integer& var) {
+/*Integer Integer::operator+(const Integer& var) {
     int result = this->value+var.value;
     return Integer(result);
+}*/
+
+Integer Integer::operator+( int other){
+    return Integer(this->value+other);
 }
 
-Integer Integer::operator+=(int value) {
-    Integer temp;
-    temp.value = this->value + value;
-    this->value = temp.value;
+Integer Integer::operator+=(int other) {
+    this->value = this->value + other;
     return *this;
 }
 
-Integer Integer::operator-(int value) {
-    return Integer(this->value-value);
+Integer Integer::operator-(int other) {
+    return Integer(this->value-other);
 }
 
-Integer Integer::operator-=(int value) {
-    Integer temp;
-    temp.value = this->value - value;
-    this->value = temp.value;
+Integer Integer::operator-=(int other) {
+    this->value = this->value - other;
     return *this;
 }
 
-std::ostream& operator <<(std::ostream& out, const Integer&X){
-    out << X.value;
+std::ostream& operator <<(std::ostream& out, const Integer& other){
+    out << other.value;
     return out;
 }
 
-std::istream& operator >>(std::istream& in, Integer&X){
-    in >> X.value;
+std::istream& operator >>(std::istream& in, Integer& other){
+    in >> other.value;
     return in;
 }
 
-Integer Integer::operator/(int value) {
-    return Integer(this->value/value);
+Integer Integer::operator/(int other) {
+    return Integer(this->value/other);
 }
 
-Integer Integer::operator^(int value) {
-    Integer temp;
-    temp.value = pow(this->value, value);
-    this->value = temp.value;
+Integer Integer::operator^(int other) {
+    this->value = pow(this->value, other);
     return *this;
 }
 
-Integer Integer::operator*(int value) {
-    return Integer();
+Integer Integer::operator*(int other) {
+    return Integer(other*this->value);
 }
 
-Integer Integer::operator*=(int value) {
-    return Integer();
+Integer Integer::operator*=(int other) {
+    this->value = other*this->value;
+    return *this;
 }
 
-bool Integer::operator>(const Integer &other) {
-    return false;
+bool Integer::operator>(int other) {
+    bool temp = this->value > other;
+    return temp;
 }
 
-bool Integer::operator<(const Integer &other) {
-    return false;
+bool Integer::operator<(int other) {
+    bool temp = this->value < other;
+    return temp;
 }
 
-bool Integer::operator>=(const Integer &other) {
-    return false;
+bool Integer::operator>=(int other) {
+    bool temp = this->value >= other;
+    return temp;
 }
 
-bool Integer::operator<=(const Integer &other) {
-    return false;
+bool Integer::operator<=(int other) {
+    bool temp = this->value <= other;
+    return temp;
 }
 
-bool Integer::operator!=(const Integer &other) {
-    return false;
+bool Integer::operator!=(int other) {
+    bool temp = this->value != other;
+    return temp;
 }
 
-bool Integer::operator==(const Integer &other) {
-    return false;
+bool Integer::operator==(int other) {
+    bool temp = this->value == other;
+    return temp;
 }

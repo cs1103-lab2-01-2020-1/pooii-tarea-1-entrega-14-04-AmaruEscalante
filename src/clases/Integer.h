@@ -17,20 +17,21 @@ public:
     explicit operator int(); //cast to int the incoming parameter
     friend std::ostream& operator << (std::ostream& out, const Integer&);
     friend std::istream& operator >> (std::istream& in, Integer&);
-    Integer operator +(const Integer& value);
-    Integer operator +=(int value);
-    Integer operator -(int value);
-    Integer operator -=(int value);
-    Integer operator /(int value);
-    Integer operator ^(int value);
-    Integer operator *(int value);
-    Integer operator *=(int value);
-    bool operator >(const Integer& other);
-    bool operator <(const Integer& other);
-    bool operator >=(const Integer& other);
-    bool operator <=(const Integer& other);
-    bool operator !=(const Integer& other);
-    bool operator ==(const Integer& other);
+    //Integer operator +(const Integer& value);
+    Integer operator +(int other);
+    Integer operator +=(int other);
+    Integer operator -(int other);
+    Integer operator -=(int other);
+    Integer operator /(int other);
+    Integer operator ^(int other);
+    Integer operator *(int other);
+    Integer operator *=(int other);
+    bool operator >(int other);
+    bool operator <(int other);
+    bool operator >=(int other);
+    bool operator <=(int other);
+    bool operator !=(int other);
+    bool operator ==(int other);
 };
 
 
