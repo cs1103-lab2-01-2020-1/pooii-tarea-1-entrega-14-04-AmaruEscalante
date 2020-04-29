@@ -18,13 +18,13 @@ public:
     friend std::ostream& operator << (std::ostream& out, const Integer&);
     friend std::istream& operator >> (std::istream& in, Integer&);
     //Integer operator +(const Integer& value);
-    Integer operator +(int other);
+    Integer operator + (int other);
     Integer operator +=(int other);
-    Integer operator -(int other);
+    Integer operator - (int other);
     Integer operator -=(int other);
-    Integer operator /(int other);
-    Integer operator ^(int other);
-    Integer operator *(int other);
+    Integer operator / (int other);
+    Integer operator ^ (int other);
+    Integer operator * (int other);
     Integer operator *=(int other);
     bool operator >(int other);
     bool operator <(int other);

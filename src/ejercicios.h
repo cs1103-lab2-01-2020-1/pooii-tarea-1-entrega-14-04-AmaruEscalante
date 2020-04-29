@@ -8,7 +8,7 @@
 #include "tipos.h"
 
 void ejercicio5a();
-//void ejercicio5b();
+void ejercicio5b();
 //void ejercicio6();
 
 #endif //TAREA1_EJERCICIOS_H
