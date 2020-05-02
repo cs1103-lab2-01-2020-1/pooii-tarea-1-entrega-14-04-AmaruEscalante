@@ -5,6 +5,8 @@
 #include "clases/Integer.h"
 #include "clases/Number.h"
 #include "clases/Number.cpp"
+#include "clases/Vector.h"
+#include "clases/Vector.cpp"
 
 using namespace std;
 
@@ -96,4 +98,34 @@ void ejercicio5b() {
 }
 
 void ejercicio6() {
+    cout << "============Ejercicio 6===========" << endl;
+    utec::Vector test(5);
+    cout<< "Vector(5) size is: " <<test.get_size()<< endl;
+    cout<< "Elements in vector are: "<< endl;
+    test.print_elements();
+    cout<< "Push back elements 5, 6 and 9"<< endl;
+    test.push_back(5);
+    test.push_back(6);
+    test.push_back(9);
+    cout<< "New elements in vector are: "<< endl;
+    test.print_elements();
+    cout<< "Pop back"<< endl;
+    test.pop_back();
+    cout<< "New elements in vector are: "<< endl;
+    test.print_elements();
+    test.insert(1,20);
+    cout<< "Insert 20 in position 1 "<< endl;
+    test.print_elements();
+    test.erase(6);
+    cout<< "Erase 5 from position 5 "<< endl;
+    test.print_elements();
+    cout<< "New vector with values (2, 1, 3)"<<endl;
+    utec::Vector test2;
+     test2.push_back(2);
+     test2.push_back(1);
+     test2.push_back(3);
+     test2.print_elements();
+    // cout<< "Sum of Vector 1 + Vector 2" << endl;
+     //auto res = test2+test;
+    /* res.print_elements();*/
 }

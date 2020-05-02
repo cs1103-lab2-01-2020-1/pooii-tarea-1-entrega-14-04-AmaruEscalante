@@ -9,6 +9,6 @@
 
 void ejercicio5a();
 void ejercicio5b();
-//void ejercicio6();
+void ejercicio6();
 
 #endif //TAREA1_EJERCICIOS_H

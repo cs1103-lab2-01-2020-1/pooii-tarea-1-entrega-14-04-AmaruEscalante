@@ -86,3 +86,39 @@ Number<T> Number<T>::operator^(int value) {
     this->data = pow(this->data, value);
     return *this;
 }
+// Todo:implement boolean operators
+template<typename T>
+bool Number<T>::operator>(const Number &other) {
+    bool temp = this->data > other.data;
+    return temp;
+}
+
+template<typename T>
+bool Number<T>::operator>=(const Number &other) {
+    bool temp = this->data >= other.data;
+    return temp;
+}
+
+template<typename T>
+bool Number<T>::operator<(const Number &other) {
+    bool temp = this->data < other.data;
+    return temp;
+}
+
+template<typename T>
+bool Number<T>::operator<=(const Number &other) {
+    bool temp = this->data <= other.data;
+    return temp;
+}
+
+template<typename T>
+bool Number<T>::operator!=(const Number &other) {
+    bool temp = this->data != other.data;
+    return temp;
+}
+
+template<typename T>
+bool Number<T>::operator==(const Number &other) {
+    bool temp = this->data == other.data;
+    return temp;
+}
