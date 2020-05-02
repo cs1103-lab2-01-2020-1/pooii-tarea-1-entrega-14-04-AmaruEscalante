@@ -1,0 +1,3 @@
+/home/amaru/Documents/CLionProjects/POO2_HW/tarea1/build/CMakeFiles/rebuild_cache.dir
+/home/amaru/Documents/CLionProjects/POO2_HW/tarea1/build/CMakeFiles/edit_cache.dir
+/home/amaru/Documents/CLionProjects/POO2_HW/tarea1/build/CMakeFiles/tarea1.dir
